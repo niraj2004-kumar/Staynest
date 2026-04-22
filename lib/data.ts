@@ -1,0 +1,126 @@
+import { Property } from './types'
+
+export const properties: Property[] = [
+  {
+    id: '1',
+    title: 'Modern Beachfront Villa',
+    location: 'Miami, Florida',
+    price: 50000,
+    rating: 4.9,
+    reviews: 128,
+    bedrooms: 4,
+    bathrooms: 3,
+    guests: 8,
+    image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811',
+    amenities: ['Pool', 'WiFi', 'Kitchen', 'Air Conditioning', 'Beach Access', 'Parking'],
+    description: 'Experience luxury living in this stunning beachfront villa with panoramic ocean views.',
+    host: {
+      name: 'Sarah Johnson',
+      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330',
+      joinedDate: '2019',
+    },
+  },
+  {
+    id: '2',
+    title: 'Cozy Mountain Cabin',
+    location: 'Aspen, Colorado',
+    price: 80000,
+    rating: 4.8,
+    reviews: 96,
+    bedrooms: 2,
+    bathrooms: 2,
+    guests: 4,
+    image: 'https://images.unsplash.com/photo-1518780664697-55e3ad937233',
+    amenities: ['Fireplace', 'WiFi', 'Hot Tub', 'Mountain View'],
+    description: 'Escape to this charming mountain cabin.',
+    host: {
+      name: 'Mike Peters',
+      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d',
+      joinedDate: '2020',
+    },
+  },
+  {
+    id: '3',
+    title: 'Downtown Luxury Loft',
+    location: 'New York, NY',
+    price: 100000,
+    rating: 4.7,
+    reviews: 203,
+    bedrooms: 1,
+    bathrooms: 1,
+    guests: 2,
+    image: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688',
+    amenities: ['WiFi', 'Gym', 'City View'],
+    description: 'Stylish loft apartment in Manhattan.',
+    host: {
+      name: 'Emma Davis',
+      avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80',
+      joinedDate: '2018',
+    },
+  },
+  {
+    id: '4',
+    title: 'Rustic Lake House',
+    location: 'Lake Tahoe, CA',
+    price: 320000,
+    rating: 4.9,
+    reviews: 87,
+    bedrooms: 3,
+    bathrooms: 2,
+    guests: 6,
+    image: 'https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8',
+    amenities: ['Lake Access', 'BBQ', 'WiFi'],
+    description: 'Beautiful lakefront property.',
+    host: {
+      name: 'David Chen',
+      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e',
+      joinedDate: '2021',
+    },
+  },
+  {
+    id: '5',
+    title: 'Tropical Paradise Suite',
+    location: 'Maui, Hawaii',
+    price: 520000,
+    rating: 5.0,
+    reviews: 156,
+    bedrooms: 2,
+    bathrooms: 2,
+    guests: 4,
+    image: 'https://images.unsplash.com/photo-1499793983690-e29da59ef1c2',
+    amenities: ['Ocean View', 'Pool', 'Kitchen'],
+    description: 'Wake up to breathtaking ocean views.',
+    host: {
+      name: 'Lisa Wong',
+      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb',
+      joinedDate: '2017',
+    },
+  },
+  {
+    id: '6',
+    title: 'Historic Brownstone',
+    location: 'Boston, MA',
+    price: 275000,
+    rating: 4.6,
+    reviews: 142,
+    bedrooms: 2,
+    bathrooms: 1,
+    guests: 4,
+
+    // ✅ YOUR NEW IMAGE (FIXED)
+    image: 'https://images.unsplash.com/photo-1753078403803-7f32bcbec3ff',
+
+    amenities: ['Garden', 'WiFi', 'Washer/Dryer'],
+    description: 'Stay in a beautifully restored brownstone.',
+    host: {
+      name: 'James Miller',
+      avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e',
+      joinedDate: '2019',
+    },
+  },
+]
+
+// helper
+export function getPropertyById(id: string): Property | undefined {
+  return properties.find(property => property.id === id)
+}
